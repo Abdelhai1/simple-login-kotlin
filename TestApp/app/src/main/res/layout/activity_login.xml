@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_card"
+
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="@color/teal_700"
+            android:textSize="30sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_weight="1"
+            android:textColorHint="@color/teal_200"
+            app:startIconDrawable="@drawable/__icon__user_"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_mail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email adress"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/teal_200"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            app:passwordToggleEnabled="true"
+            android:layout_weight="1"
+            android:textColorHint="@color/teal_200"
+            app:startIconDrawable="@drawable/__icon__locked_"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/black"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="15dp"
+            android:layout_weight="1"
+            android:background="@color/teal_200"
+
+            android:text="login"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="50dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="50dp"
+
+            />
+
+
+
+        <View
+            android:id="@+id/eclipse"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="@color/white"
+
+
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
